@@ -14,7 +14,7 @@ class Four
 		{
 			for(int j=1;j<=3;j++)
 			{
-				if(i==3 || i==1)
+				if(i%2 ==1)
 				{
 					System.out.print(k+" ");
 					k++;
