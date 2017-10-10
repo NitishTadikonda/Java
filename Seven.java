@@ -1,18 +1,42 @@
 /*
- To print all the prime numbers in between 1-50
- 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 
+ To print all the prime numbers in between 1-50 
  */
+import java.util.Scanner;
 class Seven 
 {
 	public static void main(String args[])
 	{
-		for(int i =1;i<=50;i++)
+		int status;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Lower limit");
+		int m = sc.nextInt();
+		
+		System.out.println("Enter Upper Limit");
+		int n = sc.nextInt();
+		
+		for(int i =m;i<=n;i++)
 		{
-			if( i%2  == 1)
-			{
-				System.out.print(i+" ");
+			  status =0; 
+			  if(i>1)
+			  {
+	          for(int num =2; num <= i-1; num++)
+		     {
+	             if( i % num == 0)
+		        {
+					status =1;	
+				}
+
+	             
 			}
-			
+			if(status == 0)
+			{
+				int p =i;
+				System.out.print(p+" ");
+				
+			}
+			  }
 		}
 		
 }

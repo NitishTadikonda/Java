@@ -1,13 +1,13 @@
 import java.util.Scanner;
-class Sample
+class Calculator
 {
 	public static void main(String args[])
 	{ 
-		//int status =1;
+		int status =1;
 		System.out.println("Welcome to calulator program");
 		Scanner sc = new Scanner(System.in);
-		while(true)
-		//while(status==1)
+		//while(true)
+		while(status==1)
 		{
 		System.out.println("Press 1 for addition");
 		System.out.println("Press 2 for Subtraction");
@@ -58,22 +58,11 @@ class Sample
 		 System.out.println("Do you want to continue");
 		 System.out.println("enter Your choice 0 for stop  or 1 for continue");
 		 int i = sc.nextInt();
-		 if(i ==1)
-		 {
-			 continue;
-		 }
-		 else
+		 if(i ==0)
 		 {
 			 System.out.println("Thank you");
-			 break; 
+			 break;
 		 }
-		 /*if(i == 0)
-		 {
-			 status =0;
-			 System.out.println("Thank you");
-			 //break;
-		 }*/
-		 
 		}
 		}
 	}
