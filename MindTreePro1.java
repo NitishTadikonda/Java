@@ -23,10 +23,15 @@ class Test
 					System.out.print(m+" ");
 					m++;
 				}
+				
 				else
 				{
 					System.out.print(l+" ");
 					l++;
+				}
+				if(j!=n)
+				{
+					System.out.print("* ");
 				}
 			}
 			System.out.println();
